@@ -2,7 +2,7 @@
 <html>
 <body>
   <dt>
-  <a href="https://ryecorral.github.io/capstone/home"># etiket.com </a>
+  <a href="https://teamicecode.github.io/etiket.com/home"># etiket.com </a>
   </dt>
 </body>
 </html>
