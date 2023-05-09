@@ -408,7 +408,7 @@ body {
     animation-iteration-count: initial;
     transform: translate(0rem);
     opacity: 0;
-    box-shadow: 0 0 10px hsl(117, 93%, 50%) inset;
+    box-shadow: 0 0 10px hsl(187, 94%, 52%) inset;
     margin-top: 25px;
 }
 
@@ -432,7 +432,7 @@ body {
         z-index: -1;
         margin-left: -125px;
         padding: 0;
-        box-shadow: 0 0 50px hsl(117, 93%, 50%) inset;
+        box-shadow: 0 0 50px hsl(187, 94%, 52%) inset;
 
       }
 
