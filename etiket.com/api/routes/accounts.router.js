@@ -8,6 +8,6 @@ accountRouter.post('/signup', accountsController.addAccounts);
 accountRouter.get('/getAccounts', accountsController.getAllAccounts);
 accountRouter.get('/:accountNumber', accountsController.getAccountByAccountNumber);
 accountRouter.put('/login', accountsController.logIn);
-accountRouter.put('/change-password', accountsController.changePassword );
+accountRouter.put('/changePassword', accountsController.changePassword );
 
 module.exports = accountRouter;

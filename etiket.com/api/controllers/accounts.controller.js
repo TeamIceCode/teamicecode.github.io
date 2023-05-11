@@ -36,24 +36,25 @@ function logIn(req, res)
 
 function changePassword(req, res)
 {
-    const { userName, password } = req.body; //inputs from postman
+    const { userName, password, newPassword } = req.body; //inputs from postman
     //const vars to hold msgs
-    const USER_NOT_FOUND = 'Username does not exist';
+    const USER_NOT_FOUND = 'Invalid Username or Password';
     const PASSWORD_IS_EMPTY = 'Password cannot be empty';
     const PASSWORD_UPDATED_MSG = userName => `Username ${userName}'s password has been updated`; 
     //find the username that matches from postman input
-    const account = accountsModel.find(account => account.userName === userName);
+    const account = accountsModel.find(account => account.userName === userName && account.password === password );
 
     if (account && password) 
     {
-        account.password = password;
+        account.password = newPassword;
         return res.send(PASSWORD_UPDATED_MSG(userName));
     }
     else
     {
         return !password ? res.send(PASSWORD_IS_EMPTY) : res.send(USER_NOT_FOUND);
-    }
+    } 
 }
+
 
 function addAccounts(req, res) 
 {
