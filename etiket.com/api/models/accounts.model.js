@@ -1,24 +1,21 @@
  //dummy data from database
 const accounts = [
     {
-        accountNumber: 0,
-        username: 'RyeKoralzkie',
+        userName: 'RyeKoralzkie',
         password: 'password123',
         firstName: 'Rye',
         lastName: 'Koralzkie',
         email: 'icecode@gmail.com'
     },
     {
-        accountNumber: 1,
-        username: 'BorisCode',
+        userName: 'BorisCode',
         password: 'password456',
         firstName: 'Boris',
         lastName: 'Rokstar',
         email: 'chikboi@gmail.com'
     },
     {
-        accountNumber: 2,
-        username: 'JiezelPhone',
+        userName: 'JiezelPhone',
         password: 'password789',
         firstName: 'Jiezel',
         lastName: 'Mallows',
