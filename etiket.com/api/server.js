@@ -1,14 +1,11 @@
 const express = require('express');
 const accountRouter = require('./routes/accounts.router'); //routes
-const productsRouter = require('./routes/products.router');
 const app = express();
 const PORT = 3000;
 
 //Register a middleware function that parses incoming JSON payloads/requests
 app.use(express.json());
 
-app.use('/accounts', accountRouter)
-app.use('/products', productsRouter);
 
 // middleware logger
 app.use((req, res, next) => {
@@ -20,6 +17,8 @@ app.use((req, res, next) => {
     const delta = Date.now() - start;
     console.log(`${req.method} ${req.url} ${delta}ms`);
 });
+
+app.use('/accounts', accountRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is listening to http://localhost:${PORT}`);
