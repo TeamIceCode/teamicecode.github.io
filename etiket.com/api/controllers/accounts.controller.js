@@ -21,7 +21,7 @@ function logIn(req, res)
     {
         res.status(200).json({
             status: true,
-            message: (LOGIN_SUCCESS_MSG(username))
+            message: (LOGIN_SUCCESS_MSG(userName))
         })
 
     }
@@ -47,7 +47,7 @@ function changePassword(req, res)
     if (account && password) 
     {
         account.password = password;
-        return res.send(PASSWORD_UPDATED_MSG(username));
+        return res.send(PASSWORD_UPDATED_MSG(userName));
     }
     else
     {
