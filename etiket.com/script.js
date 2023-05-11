@@ -1,3 +1,4 @@
+//////////////////// REGISTRATION /////////////////////////
 const form = document.getElementById('registration-form');
 
  form.addEventListener('submit', (event) => {
@@ -23,10 +24,10 @@ const form = document.getElementById('registration-form');
         errors.password = 'Please enter your password';
     }
      if (!firstName) {
-         errors.firstName = 'Please enter your first name';
+         errors.firstName = 'Please enter a valid first name';
      }
      if (!lastName) {
-         errors.lastName = 'Please enter your last name';
+         errors.lastName = 'Please enter a valid last name';
      }
      if (!email) {
          errors.email = 'Please enter your email';
