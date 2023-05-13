@@ -4,21 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <!-- Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
-    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="icons/favicon-32x32" sizes="32x32" href="../images/icons/favicon-32x32.png">
-    <link rel="icon" type="icons/favicon-16x16" sizes="16x16" href="../images/icons/favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <!-- Online Source -->
+    <title>etiket.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://teamicecode.github.io/etiket.com/imageBank//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://teamicecode.github.io/etiket.com/imageBank//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://teamicecode.github.io/etiket.com/imageBank//favicon-16x16.png">
+    <link rel="manifest" href="https://teamicecode.github.io/etiket.com/imageBank/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- SaSS -->
-    <link rel="stylesheet" href="../style.css">
 
 </head>
 <body>
+
+<header>
+
+        <!-- NAVIGATION BAR -->
+    <div id="bookmark" >
+        <nav class="top-nav fixed-top navbar-expand-lg" >
+            <div class="container-fluid" style="padding-left: 10px;padding-top: 5px;padding-bottom: 5px;">
+                <a href="https://teamicecode.github.io/etiket.com/home"><img class="RyeLogo" src="https://teamicecode.github.io/etiket.com/imageBank/etiketLogo.png" alt="CV Logo" height="80px" width="80px">
+                </a>
+            </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'>
+            </div>
+                </label>
+                    <ul class="menu" >
+                        <li class="nav-item neon-button1">
+                            <a class="nav-link " id="active" aria-current="page" href="https://teamicecode.github.io/etiket.com/home">Home</a>
+                        </li>
+                        <li class="nav-item neon-button1">
+                            <a class="nav-link" href="https://teamicecode.github.io/etiket.com/home">Movies</a>
+                        </li>
+                        <li class="nav-item neon-button1">
+                            <a class="nav-link" href="https://teamicecode.github.io/etiket.com/home">Concerts</a>
+                        </li>
+                        <li class="nav-item neon-button1">
+                            <a class="nav-link" href="https://teamicecode.github.io/etiket.com/home">Shop</a>
+                        </li>
+                        <li class="nav-item neon-button1">
+                            <a class="nav-link" href="https://teamicecode.github.io/etiket.com/contact_us">Contact</a>
+                        </li>
+                    </ul>
+        </nav>
+    </div>
+</header>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <div class="neon-button">
+                <h1 class="hero-title">
+                    <b>etiket.com</b>
+                </h1>
+            </div>
+        </div>
+    </div>
 
     <section class="slol">
 
@@ -79,14 +124,21 @@
     </section>
 
     
-    <footer class="text-bg-info p-3 text-center" id="contact">
-    
-        <p class="mt-4 text-sm-center">
-            © Team Ice Code -2023
-        </p>
-
+    <footer class="sticky-footer"  id="footer">
+        <div class="copyright"> &#8592 © TEAM ICE CUBE 2023 	&#8594</div>
+        <div class="row row-cols-2 row-cols-md-3 g-4" style="display: flex; align-items: start; justify-content: space-between;">
+          <div class="attribute"> 
+          Background images: <br><a href="http://www.pngtree.com" target="_blank">pngtree.com</a> & <a href="https://www.vecteezy.com/" target="_blank">vecteezy.com</a> & <a href="https://www.freeiconspng.com/img/18030" target="_blank">freeiconspng.com</a>
+          </div>
+          <div id="manage">
+            <button class="neon-button2"> <a href="#bookmark" style="text-decoration: none;color: rgb(255, 255, 255);"> Manage Account </a></button>
+          </div>
+        </div>
     </footer>
-    
+      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+      
+      
 </body>
 </html>
