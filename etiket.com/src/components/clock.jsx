@@ -1,0 +1,26 @@
+import { useState } from "react";
+import './clock.css';
+
+const Clock = () => 
+{
+    const time = new Date().toLocaleTimeString();
+    const [currentTime, setCurrentTime] = useState(time);
+
+    const updateTime = () => 
+    {
+        const time = new Date().toLocaleTimeString();
+        setCurrentTime(time);
+    }
+
+    setInterval(updateTime, 1000);
+
+    return(
+            <div className = "clock" >
+                <div className="time">
+                    {currentTime}
+                </div>
+            </div>
+        )
+}
+
+export default Clock;

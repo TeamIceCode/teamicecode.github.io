@@ -1,0 +1,23 @@
+.clock
+{
+    width: auto;
+    height: 2.5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.clock .time
+{
+    border: 2px solid rgba(166, 3, 3, 0.873);
+    width: 100px;
+    margin: 5px auto 5px auto;
+    border-radius: 15px;
+    background-color: rgba(31, 28, 28, 0.861);
+    box-shadow: -1px 3px #888888;
+}
+
+.time
+{
+    font-family: monospace;
+    color: rgb(69, 238, 2);
+}
